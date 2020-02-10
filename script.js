@@ -8,16 +8,22 @@ $.ajax({
 })
 .then(function(result) {
     console.log(result)
-
-    console.log(result.clouds.all)
+  
 
     $(".city").html("<h1>" + result.name + " Weather Details</h1>");
     $("#weather-temp")
       .append("Temperature: " +result.main.temp)
       .append( "<br/>" )
-      .append("Clouds: " + result.clouds.all);
-      
-
-    
-    
+      .append("Sky Condition: " + result.weather[0].main);
+  
     });
+    $(document).ready(function(){
+      $("button").click(function(){
+        $.ajax({url: "https://api.openweathermap.org/data/2.5/weather?q=", function(result){
+          $("#div1").html(result);
+        }});
+      });
+    });
+    
+    
+    
