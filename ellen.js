@@ -2,18 +2,22 @@
 
 var queryURL = "http://api.openweathermap.org/data/2.5/weather?q="
 var apiKey = "ddf031eb741448191855d74eeb2a8769";
-var userInput = "carbondale,pennsylvania";
+
 
 
 $(document).ready(function(){
 
-$("#tb").click(function(){
+$("#submit").click(function(event){
+
+    
+var city = $("#city").val();
+var state = $("#state").val();
 
     var tempEl = $("result.main.temp").val();
     var skyEl = $("result.weather[0].main").val();
 
 $.ajax(
-    {url: queryURL + userInput + "&units=imperial&appid=" + apiKey,
+    {url: queryURL + city + "," + state + "&units=imperial&appid=" + apiKey,
      method: "GET"
  }).then(function(result) {
 
@@ -23,6 +27,9 @@ $.ajax(
  console.log (result.main.temp, result.weather[0].main);
   })
  
+
+  // IF STATEMENTS that parse out the weather in destination
+  // and form a request url for desired products
 
 
   $.ajax({
@@ -39,7 +46,7 @@ $.ajax(
    // var cold= (<40) API result that includes parkas/scarfs/gloves *the image will link to the purchase page
    // var cool= (>=41||<=60) API result that includes wool-sweaters/jaclets/sweatshirts*
    // var warm= (>=61||<=80) API result that includes cotton/light clothes  
-   // var warm= (>=81) API result that includes cotton/shorts/skirts
+   // var hot= (>=81) API result that includes cotton/shorts/skirts
 
 console.log (result)
  
