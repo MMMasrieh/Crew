@@ -6,8 +6,7 @@ var apiKey = "ddf031eb741448191855d74eeb2a8769";
 
 
 $(document).ready(function(){
-console.log("ready!");
-});
+
 $("#submit").click(function(event){
 
     
