@@ -3,25 +3,151 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-    
+    <link rel="stylesheet" href="assets/styles/style.css"/>
 
     
-    <title>Hello, world!</title>
+    <title>Weather Fit</title>
   </head>
   
   
   <body>
-    <h1>Hello, world!</h1>
+    <header class="bg-black-90 fixed w-100 pv3 pv4-ns ph4-m ph5-l">
+      <nav class="f2 fw6 ttu tracked">
+        <a class="link dim light-purple dib mr3" href="index.html" title="Home">Weather Fit</a>
+        
+      </nav>
+    </header>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<br>
+
+
+
+
+
+    <div id="main">
+      <article class="ma3 center ph3 ph5-ns tc br2 pv5 bg-light-purple purple mb3">
+        <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
+          This is a Weather (out)Fit!
+        </h1>
+        <h2 class="fw2 f4 lh-copy mt0 mb3">
+          Weather Fit is the newest application in weather-based outfit selection. More text blah blah blah. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis maiores tenetur est, quasi quisquam esse, inventore officiis nulla enim eius saepe, laborum voluptates nobis soluta impedit necessitatibus ut molestiae doloremque?
+        </h2>
+    
+        </div>
+      </article>
+        
+      
+      <div class="mv2 pa3 fl w-third">
+        <a class="ma6 db center mw5 tc black link dim"
+        title="Rainy Day"
+        href="#">
+     
+       <img class="br-100 db ba b--black-10"
+            src="https://namaha.files.wordpress.com/2009/03/rose-rain-kissed.jpg">
+       
+     
+       <dl class="mt2 f6 lh-copy">
+         <dt class="clip">Title</dt>
+         <dd class="purple b ml0">Cool Day</dd>
+         
+       </dl>
+     </a>
+
+
+      </div>
+      
+      <div class="mv2 pa3 fl w-third">
+
+
+            
+                
+        
+        <form class="mv6 pa4 black-80">
+          <div class="measure">
+            <label for="name" class="purple f6 b db mb2">City<span class="normal black-60"></label>
+            <input id="city" class="input-reset center ba b--black-20 pa2 mb2 db w-80" type="text" aria-describedby="name-desc">
+            <label for="name" class="purple f6 b db mb2">State</label>
+            <input id="state" class="input-reset center ba b--black-20 pa2 mb2 db w-80" type="text" aria-describedby="name-desc">
+          </div>
+           <button class="purple b w-50 br2 mv1" type="button" id="submit">submit</button>
+        </form>
+          
+           
+
+        </form>
+
+      </div>
+      
+      <div class="mv2 pa3 fl w-third">
+        <a class="ma6 db center mw5 tc black link dim"
+        title="Sunny Day"
+        href="#">
+     
+       <img class="br-100 db ba b--black-10"
+            src="https://www.peoplespharmacy.com/wp-content/uploads/BrightSun900px.jpg"
+       >
+     
+       <dl class="mt2 f6 lh-copy">
+         <dt class="clip">Title</dt>
+         <dd class="purple b ml0">Warm Day</dd>
+     
+       </dl>
+     </a>
+
+
+      </div>
+
+    </div>
+    
+    
+    
+    
+    <br>
+
+    <div class="fn ma3 center ph3 ph5-ns tc br2 pv5  purple mb3"  id="Result">
+      <div class="skyEl">
+          Sky
+      </div>
+      <div class="tempEl">
+          Temp
+      </div>
+      HatchBack!
+  
+  
+  
+  
+  
+  
+    </div>
+         
+      
+    
+    
+    <footer class="pv5 ph3 ph5-m ph6-l mid-gray">
+        <small class="f6 db tc">© 2020 <b class="ttu">The Crew Inc</b>., All Rights Reserved</small>
+        <div class="tc mt3">
+          <a href="/language/" title="Language" class="f6 dib ph2 link mid-gray dim">Language</a>
+          <a href="/terms/"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
+          <a href="/privacy/"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Privacy</a>
+        </div>
+      </footer>
+
+
+
+  
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
