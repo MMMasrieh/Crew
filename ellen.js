@@ -9,29 +9,38 @@ function outfitURL(temp, gender) {
     if (temp < 43) {
         if (gender == 'female'){
             baseURL += "0844549001";
+           $("#image1").attr("src", "assets/images/outfit/female/cold-0844549001.jpg"); 
         }else{
             baseURL += "0768509002";
+            $("#image2").attr("src", "assets/images/outfit/male/cold-0768509002.jpg");
         } 
 
     } else if (temp >= 43 || temp < 60) {
         if (gender == 'female'){
         baseURL += "0831174001";
+        $("#image1").attr("src", "assets/images/outfit/female/cool-0831174001.jpg");
         }else{
             baseURL += "0815456001";
+            $("#image2").attr("src", "assets/images/outfit/male/cool-0815456001.jpg");
         }
 
     } else if (temp >= 60 || temp < 79) {
         if (gender == 'female'){
         baseURL += "0877240001";
+        $("#image1").attr("src", "assets/images/outfit/female/warm-0877240001.jpg");
+        
     }else{
         baseURL += "0649098003";
+        $("#image2").attr("src", "assets/images/outfit/male/warm-0649098003.jpg");
     }
 
     } else if (temp >= 79) {
         if (gender == 'female'){
         baseURL += "0820865001";
+        $("#image1").attr("src", "assets/images/outfit/female/hot-0820865001.jpg");
     }else{
         baseURL += "0685604050";
+        $("#image2").attr("src", "assets/images/outfit/male/hot-0685604050.jpg");
     }
     };
 
@@ -72,7 +81,8 @@ $(document).ready(function () {
 
                 $(".outfit-female").text(result.product.name);
                 $(".outfitUrl-female").text(result.product.productUrl);
-
+               // $('#image1').append('<img id="cool" src="assets\images\outfit\female\cool-0831174001.jpg" /')
+                
 
                 console.log(result.product.name,result.product.productUrl);
 
