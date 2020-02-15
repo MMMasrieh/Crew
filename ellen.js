@@ -80,9 +80,8 @@ $(document).ready(function () {
             }).then(function (result) {
 
                 $(".outfit-female").text(result.product.name);
-                $(".outfitUrl-female").text(result.product.productUrl);
-               // $('#image1').append('<img id="cool" src="assets\images\outfit\female\cool-0831174001.jpg" /')
-                
+                $(".outfitUrl-female").attr("href",result.product.productUrl);
+               
 
                 console.log(result.product.name,result.product.productUrl);
 
