@@ -72,13 +72,13 @@ Query to API always the same// the only 2 things that change is the structure of
 
 
         Male:
-        Hot- tank-top 0866219002, shorts 0687635015
-        cool- hoodie 0815092001, jeans 0751994007
-        swim-shorts 0685601014
         cold- coat 0781638001, pants 0815456001
+        cool- hoodie 0815092001, jeans 0751994007
+        warm- tank-top 0866219002, shorts 0687635015
+        hot swim-shorts 0685601014
 
         Female:
         cold- coat 0790006001, jeans 0399256018
         cool- hoodie 0859201001, pants 0760084003
-        swim- sorang 0812157001, bikini 0820865001
-        hot- tank-top 0795675001, shorts 0884405003
+        warm- tank-top 0795675001, shorts 0884405003
+        hot- sorang 0812157001, bikini 0820865001

@@ -2,6 +2,10 @@ var APIKey = "ddf031eb741448191855d74eeb2a8769";
 var userInput = "miami,florida"
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + userInput  + "&units=imperial&apikey=" + APIKey;
 
+
+
+
+
 $.ajax({
   url: queryURL,
   method: "GET"
@@ -15,6 +19,7 @@ $.ajax({
       .append("Temperature: " +result.main.temp)
       .append( "<br/>" )
       .append("Sky Condition: " + result.weather[0].main);
+      
   
     });
     $(document).ready(function(){
@@ -27,3 +32,8 @@ $.ajax({
     
     
     
+/*var current = $.now();
+var maxDate = new Date(current);
+var currentDate = maxDate.toString();
+$('#date').html(currentDate);*/
+
