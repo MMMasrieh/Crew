@@ -6,16 +6,16 @@ var apiKey = "ddf031eb741448191855d74eeb2a8769";
 function outfitURL(temp) {
     var baseURL = "https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/detail?country=us&lang=en&productcode="
 
-    if (temp <= 62) {
+    if (temp < 63) {
         baseURL += "0551504010";
+
     } else if (temp >= 63) {
         baseURL += "0742561001";
     };
 
     return baseURL
+
 }
-
-
 
 $(document).ready(function () {
 
@@ -33,7 +33,9 @@ $(document).ready(function () {
             $(".tempEl").text(result.main.temp);
             $(".skyEl").text(result.weather[0].main);
 
-            console.log(result.main.temp, result.weather[0].main);
+            //console.log(result.main.temp, result.weather[0].main);
+            
+        
 
             $.ajax({
                 async: true,

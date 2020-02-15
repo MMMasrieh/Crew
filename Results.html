@@ -18,7 +18,7 @@
   
   
   <body>
-    <header class="bg-black-90 fixed w-100 pv3 pv4-ns ph4-m ph5-l">
+    <header class="bg-black-90 w-100 pv3 pv4-ns ph4-m ph5-l">
       <nav class="f2 fw6 ttu tracked">
         <a class="link dim light-purple dib mr3" href="index.html" title="Home">Weather Fit</a>
         
@@ -32,16 +32,24 @@
 
 
     <div id="main">
-      <article class="ma3 center ph3 ph5-ns tc br2 pv5 bg-light-purple purple mb3">
-        <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
-          This is a Weather (out)Fit!
-        </h1>
-        <h2 class="fw2 f4 lh-copy mt0 mb3">
-          Weather Fit is the newest application in weather-based outfit selection. More text blah blah blah. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis maiores tenetur est, quasi quisquam esse, inventore officiis nulla enim eius saepe, laborum voluptates nobis soluta impedit necessitatibus ut molestiae doloremque?
-        </h2>
-    
+      <article class="athelas">
+        <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(http://tachyons.io/img/over-canvas.jpg) no-repeat center;">
+          <div class="dtc v-mid">
+            <header class="white-70">
+              <h2 class="f6 fw1 ttu tracked mb2 lh-title">Version 1</h2>
+              <h3 class="f6 fw1 lh-title">2020</h3>
+            </header>
+            <h1 class="f1 f-headline-l fw1 i white-60">Weather outFit</h1>
+            <blockquote class="ph0 mh0 measure f4 lh-copy center">
+              <p class="fw1 white-70">
+                Select an outfit for any weather!
+              </p>
+              <cite class="blinking f6 ttu tracked fs-normal">The Crew</cite>
+            </blockquote>
+          </div>
         </div>
-      </article>
+       
+     
         
       
       <div class="mv2 pa3 fl w-third">
@@ -69,20 +77,18 @@
             
                 
         
-        <form class="mv6 pa4 black-80">
+        <div class="mv6 pa4 black-80">
           <div class="measure">
             <label for="name" class="purple f6 b db mb2">City<span class="normal black-60"></label>
-            <input id="city" class="input-reset center ba b--black-20 pa2 mb2 db w-80" type="text" aria-describedby="name-desc">
+            <input id="city" class="input-reset center ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
             <label for="name" class="purple f6 b db mb2">State</label>
-            <input id="state" class="input-reset center ba b--black-20 pa2 mb2 db w-80" type="text" aria-describedby="name-desc">
+            <input id="state" class="input-reset center ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
           </div>
-           <button id="submit" class="submit purple b w-40 br2 mv1" type="button" id="submit">Submit</button>
-           
-        </form>
+           <button class="purple b w-50 br2 mv1" type="button" id="submit">submit</button>
+        </div>
           
            
 
-        </form>
 
       </div>
       
@@ -119,7 +125,15 @@
       <div class="tempEl">
           Temp
       </div>
-      HatchBack!
+    
+    <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+      <h1 class="mt0">Outfit Image</h1>
+      <p class="lh-copy measure">
+        
+      </p>
+      <img src="https://lp2.hm.com/hmgoepprod?set=quality[79],source[/5b/ee/5bee29e7ae270ff2ecdd09adf1d27e66b1ac85e9.jpg],origin[dam],category[men_hoodiessweatshirts_sweatshirts],type[LOOKBOOK],res[w],hmver[1]&call=url[file:/product/main]">
+    </section>
+
   
   
   
@@ -149,9 +163,10 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="ellen.js"></script>
   </body>
 </html>
 
