@@ -101,7 +101,7 @@ $(document).ready(function () {
             .then(function (result) {
 
                 $(".outfit-male").text(result.product.name);
-                $(".outfitUrl-male").text(result.product.productUrl);
+                $(".outfitUrl-male").attr("href",result.product.productUrl);
 
 
                 console.log(result.product.name,result.product.productUrl);
