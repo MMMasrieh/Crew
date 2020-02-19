@@ -6,7 +6,7 @@ var apiKey = "ddf031eb741448191855d74eeb2a8769";
 function outfitURL(temp, gender) {
     var baseURL = "https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/detail?country=us&lang=en&productcode="
 
-    if (temp < 43) {
+    if (temp < 50) {
         if (gender == 'female'){
             baseURL += "0844549001";
            $("#image1").attr("src", "assets/images/outfit/female/cold-0844549001.jpg"); 
@@ -15,7 +15,7 @@ function outfitURL(temp, gender) {
             $("#image2").attr("src", "assets/images/outfit/male/cold-0768509002.jpg");
         } 
 
-    } else if (temp >= 43 || temp < 60) {
+    } else if (temp >= 50 && temp < 70) {
         if (gender == 'female'){
         baseURL += "0831174001";
         $("#image1").attr("src", "assets/images/outfit/female/cool-0831174001.jpg");
@@ -24,17 +24,17 @@ function outfitURL(temp, gender) {
             $("#image2").attr("src", "assets/images/outfit/male/cool-0815456001.jpg");
         }
 
-    } else if (temp >= 60 || temp < 79) {
+    } else if (temp >= 70 && temp < 78) {
         if (gender == 'female'){
         baseURL += "0877240001";
         $("#image1").attr("src", "assets/images/outfit/female/warm-0877240001.jpg");
         
-    }else{
+        }else{
         baseURL += "0649098003";
         $("#image2").attr("src", "assets/images/outfit/male/warm-0649098003.jpg");
     }
 
-    } else if (temp >= 79) {
+    } else if (temp >= 78) {
         if (gender == 'female'){
         baseURL += "0820865001";
         $("#image1").attr("src", "assets/images/outfit/female/hot-0820865001.jpg");
