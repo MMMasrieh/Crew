@@ -1,127 +1,165 @@
-<!DOCTYPE html>
-<html>
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+
     
-    <head>
-        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
-        <link rel="stylesheet" href="assets/styles/style.css"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-            <title>
-              Weather Fit
-            </title>
-           
+    <title>Weather Fit</title>
+  </head>
+  
+  
+  <body>
+    <header class="bg-black-90 w-100 pv3 pv4-ns ph4-m ph5-l">
+      <nav class="f2 fw6 ttu tracked">
+        <a class="link dim light-purple dib mr3" href="results.html" title="Home">Weather Fit</a>
         
-    </head>
+      </nav>
+    </header>
+
+
+
+
+
+
+    <div id="main">
+      <article class="athelas">
+        <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(http://tachyons.io/img/over-canvas.jpg) no-repeat center;">
+          <div class="dtc v-mid">
+            <header class="white-70">
+              <h2 class="f6 fw1 ttu tracked mb2 lh-title">Version 1</h2>
+              <h3 class="f6 fw1 lh-title">2020</h3>
+            </header>
+            <h1 class="f1 f-headline-l fw1 i white-60">Weather outFit</h1>
+            <blockquote class="ph0 mh0 measure f4 lh-copy center">
+              <p class="fw1 white-70">
+                Select an outfit for any weather!
+              </p>
+              <cite class="blinking f6 ttu tracked fs-normal">The Crew</cite>
+            </blockquote>
+          </div>
+        </div>
+       
+     
         
-    
 
 
-    <body>
 
-        <header class="bg-black-90 fixed w-100 pv3 pv4-ns ph4-m ph5-l">
-            <nav class="f2 fw6 ttu tracked">
-              <a class="link dim light-purple dib mr3" href="results.html" title="Home">Weather Fit</a>
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-50 w-third-ns pa2">
+              <div class="outline bg-white pv4">
+                <a class="ma6 center db mw5 tc black link dim"
+                title="Rainy Day"
+                href="#">
+            
+              <img class="br-100 db ba b--black-10"
+                    src="https://namaha.files.wordpress.com/2009/03/rose-rain-kissed.jpg">
               
-            </nav>
-          </header>
-
-        
-          <br>
-<div id="main">
-  <article class="ma3 center ph3 ph5-ns tc br2 pv5 bg-light-purple purple mb3">
-    <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
-      This is a Weather Fit!
-    </h1>
-    <h2 class="fw2 f4 lh-copy mt0 mb3">
-      Weather Fit is the newest application in weather-based outfit selection. More text blah blah blah. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis maiores tenetur est, quasi quisquam esse, inventore officiis nulla enim eius saepe, laborum voluptates nobis soluta impedit necessitatibus ut molestiae doloremque?
-    </h2>
-
-    </div>
-  </article>
-
-
-    <div class="f1 i bg-light-purple">
-     
-    </div>
-<div class="row">
-      <div class="col-sm-4">
-        <a class="ma6 db center mw5 tc black link dim"
-   title="Rainy Day"
-   href="#">
-
-  <img class="db ba b--black-10"
-       src="https://namaha.files.wordpress.com/2009/03/rose-rain-kissed.jpg">
-  
-
-  <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0">Cool Day</dd>
-    
-  </dl>
-</a>
-      </div>
-
-
-
-      <div class="col-sm-4">
-        <div class="container">
-    
-          
+            
+              <dl class="mt2 f6 lh-copy">
+                <dt class="clip">Title</dt>
+                <dd class="purple b ml0">Cool Day</dd>
                 
-        
-                  <form class="ma6 pa4 black-80">
-                    <div class="measure">
-                      <label for="name" class="f6 b db mb2">City<span class="normal black-60"></label>
-                      <input id="city" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
-                      <label for="name" class="f6 b db mb2">State</label>
-                      <input id="state" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" aria-describedby="name-desc">
-                    </div>
-                     <button class="normal black-90 b  mv1 mh4" type="button" id="submit">submit</button>
-                  </form>
+              </dl>
+            </a>
+              </div>
+            </div>
+            <div class="fl w-50 w-third-ns pa2">
+              <div class="outline bg-white pv4">
+                <a class="ma6 db center mw5 tc black link dim"
+                title="Sunny Day"
+                href="#">
+             
+               <img class="br-100 db ba b--black-10"
+                    src="https://www.peoplespharmacy.com/wp-content/uploads/BrightSun900px.jpg"
+               >
+             
+               <dl class="mt2 f6 lh-copy">
+                 <dt class="clip">Title</dt>
+                 <dd class="purple b ml0">Warm Day</dd>
+             
+               </dl>
+             </a>
+              </div>
+            </div>
+          </div>
+        </div> 
+       
+
+
+        <div class="mw9 center ph3-ns">
+          <div class="cf ph2-ns">
+            <div class="fl w-100 w-third-ns pa2">
+              <div class="outline bg-white pv4">
+                <div class="mv4 pa4 black-80">
+                  <div>
+                    <label for="name" class="purple f6 b db mb2">City</label>
+                    <input id="city" class="input-reset center ba b--black-20 pa2 mb2 db w-50" type="text" aria-describedby="name-desc">
+                    <label for="name" class="purple f6 b db mb2">State</label>
+                    <input id="state" class="input-reset center ba b--black-20 pa2 mb2 db w-50" type="text" aria-describedby="name-desc">
+                  </div>
+                   <button class="purple b w-30 br2 mv1" type="button" id="submit">Submit</button>
+                </div>
+              </div>
+                      
+            </div>
+            <div class="fl w-50 w-third-ns pa2">
+              <div class="outline bg-white pv4">
+                <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+                  <h1 class="mt0">Outfit Image</h1>
+                  <p class="lh-copy measure">
                     
-                     
-
-                  </form>
-      </div>
-      <div class="col-sm-4">
-        
-      </div>
+                  </p>
+                  <img class="" id="image1"src="https://lp2.hm.com/hmgoepprod?set=quality[79],source[/e8/08/e808feade9a367df8ab380ba72dadc8117d311da.jpg],origin[dam],category[ladies_dresses_bodycon],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"> 
+                  <div class="fn ma3 center ph3 ph5-ns tc br2 pv5  purple mb3"  id="Result">
+                    <div class="skyEl"></div>
+                    <div class="tempEl"></div>
+                    <div><a class="outfitUrl-female" href="outfitUrl-female" target="_blank"> Complete the Look </a></div>
+                </section>
+              
+              </div>
+              
+            </div>
+            <div class="fl w-50 w-third-ns pa2">
+              <div class="outline bg-white pv4">
+                <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+                  <h1 class="mt0">Outfit Image</h1>
+                  <p class="lh-copy measure"></p>
+                  <img id="image2" src="https://lp2.hm.com/hmgoepprod?set=quality[79],source[/30/94/309420b0d490272f87e69f9d27535048b16f57d8.jpg],origin[dam],category[men_cardigansjumpers_turtleneck],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]">
+                  <div class="fn ma3 center ph3 ph5-ns tc br2 pv5  purple mb3"  id="Result">
+                    <div class="skyEl"></div>
+                    <div class="tempEl"></div>
+                    <div><a class="outfitUrl-male" href="outfitUrl-male" target="_blank">Complete the Look</a></div>
+                </section>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+         
       
-    </div>
-    <a class="ma6 db center mw5 tc black link dim"
-   title="Sunny Day"
-   href="#">
-
-  <img class="db ba b--black-10"
-       src="https://www.peoplespharmacy.com/wp-content/uploads/BrightSun900px.jpg"
-  >
-
-  <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="ml0">Warm Day</dd>
-
-  </dl>
-</a>
-  </div>
-
-  <div class="outline bg-white pv4">
-    <a class="outfitUrl-female"
-    title="Rainy Day"
-    href="#">
-
-  <img class="br-100 db ba b--black-10"
-        src="">
-  
-
-  <dl class="mt2 f6 lh-copy">
-    <dt class="clip">Title</dt>
-    <dd class="purple b ml0">Cool Day</dd>
     
-  </dl>
-</a>
-  </div>
+    
+    <footer class="pv5 ph3 ph5-m ph6-l mid-gray">
+        <small class="f6 db tc">© 2020 <b class="ttu">The Crew Inc</b>., All Rights Reserved</small>
+        <div class="tc mt3">
+          <a href="/language/" title="Language" class="f6 dib ph2 link mid-gray dim">Language</a>
+          <a href="/terms/"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
+          <a href="/privacy/"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Privacy</a>
+        </div>
+      </footer>
 
 
-  <div class="ma3 center ph3 ph5-ns tc br2 pv5 bg-light-purple purple mb3" id="Result">
 
   
 
@@ -130,34 +168,9 @@
 
 
 
-  </div>
-
-
-
-
-
-
-        
-     
-  <footer class="pv4 ph3 ph5-m ph6-l mid-gray">
-    <small class="f6 db tc">© 2020 <b class="ttu">The Crew Inc</b>., All Rights Reserved</small>
-    <div class="tc mt3">
-      <a href="/language/" title="Language" class="f6 dib ph2 link mid-gray dim">Language</a>
-      <a href="/terms/"    title="Terms" class="f6 dib ph2 link mid-gray dim">Terms of Use</a>
-      <a href="/privacy/"  title="Privacy" class="f6 dib ph2 link mid-gray dim">Privacy</a>
-    </div>
-  </footer>
-
-
-
-
-
-    
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="ellen.js"></script>
-    </body>
-
-
+  </body>
 </html>
